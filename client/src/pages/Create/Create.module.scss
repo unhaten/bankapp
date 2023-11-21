@@ -1,0 +1,145 @@
+.section {
+    @include sectionDefault;
+    margin-top: 25px;
+    width: auto;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cardContainer {
+    width: 25%;
+    position: relative;
+
+    .card {
+        position: relative;
+        margin-top: 60px;
+        padding: $pc-card-padding;
+        color: #fff;
+        background-color: grey;
+        opacity: 0.5;
+        border-top-left-radius: 16px;
+        border-top-right-radius: 16px;
+        z-index: 1;
+        transition: color 0.3s ease, background-color 0.3s ease;
+
+        .cardTop {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .name {
+                font-size: 22px;
+            }
+
+            img {
+                height: 30px;
+            }
+        }
+
+        .cardBottom {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 40px;
+
+            .cardNumber {
+                font-size: 20px;
+                letter-spacing: 4px;
+            }
+
+            .cvv {
+                padding: 10px 20px;
+                color: #fff;
+                background-color: rgb(50, 50, 50);
+                border-radius: 16px;
+                font-size: 12px;
+                letter-spacing: 2.5px;
+            }
+        }
+    }
+}
+
+.inputContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+
+    .text {
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    input {
+        margin-top: 10px;
+        padding: 10px 20px;
+        border: none;
+        outline: 1px solid black;
+        border-radius: 24px;
+        text-align: center;
+    }
+}
+
+.typeContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+
+    .text {
+        margin-bottom: 20px;
+    }
+
+    .typeContent {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+
+        .label {
+            position: relative;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            cursor: pointer;
+            transition: box-shadow 0.3s ease;
+            border-top-left-radius: 12px;
+            border-top-right-radius: 12px;
+
+            input {
+                display: none;
+            }
+
+            .cardExample {
+                padding: 10px;
+                width: 40px;
+                height: 10px;
+                border-top-left-radius: 12px;
+                border-top-right-radius: 12px;
+                user-select: none;
+                cursor: pointer;
+            }
+
+            &:hover {
+                box-shadow: 0 0 8px 2px rgb(110, 70, 143);
+            }
+        }
+    }
+}
+
+.btnContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+
+    button {
+        min-width: 250px;
+    }
+}

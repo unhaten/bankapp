@@ -1,0 +1,14 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+.left {
+    width: calc($pc-left-width + $pc-card-padding * 2);
+}
+
+.right {
+    width: calc(100% - $pc-left-width - $pc-nav-padding * 2);
+    border-radius: 16px;
+}

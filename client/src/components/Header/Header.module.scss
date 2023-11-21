@@ -1,0 +1,47 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    width: calc($pc-left-width + $pc-card-padding * 2);
+
+    img {
+        height: 70px;
+    }
+}
+
+.right {
+}
+
+.nav {
+    padding: 25px $pc-nav-padding;
+    width: calc(85% - $pc-left-width - $pc-card-padding);
+    border-radius: 54px;
+    background-color: white;
+}
+
+.list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+}
+
+.item {
+    font-weight: 500;
+    color: $secondary-color;
+    transition: color 0.3s ease;
+}
+
+.item:hover {
+    color: $primary-color;
+}
+
+.active {
+    color: $primary-color;
+}

@@ -1,0 +1,81 @@
+@font-face {
+    font-family: "Satoshi";
+    src: url("../fonts/Satoshi-Regular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Satoshi";
+    src: url("../fonts/Satoshi-Bold.woff2") format("woff2");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    // box-sizing: border-box;
+}
+
+body {
+    // padding: prompts.$pc-padding;
+    background-color: rgb(245, 245, 245);
+    font-family: Satoshi, sans-serif;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+p,
+h1,
+h2,
+h3,
+h4 {
+    margin: 0;
+}
+
+button {
+    font-family: Satoshi, sans-serif;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#root {
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 1600px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.react-datepicker {
+    border-radius: 12px;
+}
+
+.react-datepicker__header {
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px !important;
+}
+
+.react-datepicker__day--in-range,
+.react-datepicker__day--keyboard-selected {
+    color: #fff;
+    background-color: $third-color;
+}
+
+.disabled {
+    opacity: 0.5;
+    cursor: no-drop !important;
+    user-select: none;
+}

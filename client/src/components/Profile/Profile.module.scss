@@ -1,0 +1,21 @@
+.profile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 25px;
+    padding: 25px 10px;
+    width: 100%;
+    border-radius: 54px;
+    background-color: white;
+}
+
+.text {
+    margin-left: 30px;
+    color: $secondary-color;
+}
+
+.name {
+    color: rgb(69, 40, 98);
+    font-weight: 500;
+    font-size: 18px;
+}

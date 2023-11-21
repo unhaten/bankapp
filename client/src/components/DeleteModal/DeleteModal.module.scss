@@ -1,0 +1,30 @@
+.deleteModal {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.65);
+    z-index: 2;
+
+    .modalContainer {
+        padding: 100px;
+        width: 500px;
+        height: 100px;
+        background-color: $bg-light;
+        border-radius: 32px;
+    }
+
+    .btnContainer {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-top: 30px;
+    }
+
+    button {
+        padding: 15px 75px;
+    }
+}

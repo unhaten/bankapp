@@ -1,0 +1,79 @@
+.section {
+    @include sectionDefault;
+    margin-top: 20px;
+    height: 100%;
+
+    .topContainer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .header {
+            @include header;
+        }
+    }
+}
+
+.options {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.dateSelection {
+    position: relative;
+    padding: 5px 5px 5px 30px;
+    background-color: rgb(245, 245, 245);
+    border-radius: 32px;
+
+    .dateContent {
+        display: flex;
+        align-items: center;
+        gap: 80px;
+        cursor: pointer;
+
+        .text {
+            color: $secondary-color;
+        }
+
+        .icon {
+            @include flexCenter;
+            width: 50px;
+            height: 50px;
+            background-color: #fff;
+            border-radius: 50%;
+        }
+    }
+
+    .dateContainer {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
+
+.arrowContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: purple;
+    color: white;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.container {
+    margin-top: 20px;
+
+    .list {
+        margin: 0;
+        padding: 0;
+
+        li:not(:first-child) {
+            margin-top: 20px;
+        }
+    }
+}

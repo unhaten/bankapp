@@ -1,0 +1,31 @@
+$primary-color: #000;
+$secondary-color: rgb(107, 107, 107);
+$third-color: rgb(110, 70, 143);
+$bg-light: rgb(245, 245, 245);
+$bg-dark: rgba(0, 0, 0, 0.05);
+
+$pc-padding: 0 125px;
+
+$pc-left-width: 22%;
+$pc-card-padding: 30px;
+$pc-nav-padding: 70px;
+$pc-section-padding: 30px;
+
+@mixin header {
+    font-weight: 400;
+    font-size: 20px;
+    color: $secondary-color;
+}
+
+@mixin sectionDefault {
+    padding: $pc-section-padding;
+    width: 100%;
+    border-radius: 16px;
+    background-color: #fff;
+}
+
+@mixin flexCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

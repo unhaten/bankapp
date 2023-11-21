@@ -1,0 +1,60 @@
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .trade {
+        flex-basis: 40%;
+    }
+    .dateInfo,
+    .cost {
+        flex-basis: 25%;
+    }
+}
+
+.trade {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    .tradeIcon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 65px;
+        height: 65px;
+        background-color: rgba(0, 0, 0, 0.05);
+        border-radius: 50%;
+        font-size: 20px;
+    }
+
+    .tradeInfo {
+        .tradeName {
+            font-size: 18px;
+        }
+        .tradeDirection {
+            margin-top: 5px;
+            color: $secondary-color;
+        }
+    }
+}
+.dateInfo {
+    .date {
+        font-size: 18px;
+    }
+    .time {
+        margin-top: 5px;
+        color: $secondary-color;
+    }
+}
+
+.cost {
+    .amount {
+        text-align: right;
+
+        .currency {
+            font-weight: 500;
+            font-size: 24px;
+        }
+    }
+}

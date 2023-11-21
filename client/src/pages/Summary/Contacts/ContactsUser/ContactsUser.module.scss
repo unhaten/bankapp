@@ -1,0 +1,23 @@
+.item {
+    width: 80px;
+
+    .imageContainer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 30px;
+        background-color: $bg-light;
+        border-radius: 50%;
+    }
+
+    .name {
+        margin-top: 15px;
+        text-align: center;
+        color: $secondary-color;
+        cursor: default;
+    }
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
