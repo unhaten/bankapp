@@ -61,6 +61,7 @@ const Cards: FC<ICards> = ({ userEmail, userName }) => {
 
     useEffect(() => {
         getCardsData();
+        //eslint-disable-next-line
     }, []);
 
     const cardList =

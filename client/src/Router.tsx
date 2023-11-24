@@ -15,6 +15,7 @@ import Protected from "./components/Protected/Protected";
 // ! ROUTER === APP
 
 const App = () => {
+    //eslint-disable-next-line
     const [cookies, setCookie, removeCookie] = useCookies(undefined);
     const authToken = cookies?.AuthToken;
     const userEmail = cookies?.Email;
@@ -42,7 +43,10 @@ const App = () => {
                         path="create"
                         element={
                             <Protected authToken={authToken}>
-                                <Create userName={userName} userEmail={userEmail}></Create>
+                                <Create
+                                    userName={userName}
+                                    userEmail={userEmail}
+                                ></Create>
                             </Protected>
                         }
                     ></Route>

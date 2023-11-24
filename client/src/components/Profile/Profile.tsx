@@ -1,14 +1,15 @@
 import { FC } from "react";
 import s from "./Profile.module.scss";
 import { useCookies } from "react-cookie";
-import { Navigate, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 interface IProfile {
     userName: string;
 }
 
 const Profile: FC<IProfile> = ({ userName }) => {
-    const [cookies, setCookie, removeCookie] = useCookies(null);
+    //eslint-disable-next-line
+    const [cookies, setCookie, removeCookie] = useCookies(undefined);
     const navigate = useNavigate();
 
     const signOut = () => {

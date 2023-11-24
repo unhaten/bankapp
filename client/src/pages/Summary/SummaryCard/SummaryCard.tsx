@@ -29,8 +29,9 @@ interface IPrimaryCard {
 const SummaryCard: FC<ISummaryCard> = ({ userName, cards, getCardsData }) => {
     const [isOpen, setIsOpen] = useState(false);
 
-    const primaryCard: IPrimaryCard =
-        cards && cards.filter((item) => item.primary_card && item);
+    const primaryCard =
+        cards &&
+        cards.filter((item: IPrimaryCard) => item.primary_card && item);
     // const cardList = cards?.map((item) => item);
     // const firstCard = cardList[0];
 

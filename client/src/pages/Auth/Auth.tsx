@@ -9,6 +9,7 @@ interface IAuth {
 }
 
 const Auth: FC<IAuth> = ({ authToken }) => {
+    //eslint-disable-next-line
     const [cookies, setCookie, removeCookie] = useCookies<any>(null);
     const [registration, setRegistration] = useState<boolean>(false);
     const [error, setError] = useState<string | null>(null);
