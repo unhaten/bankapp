@@ -1,5 +1,5 @@
 import s from "./Transactions.module.scss";
-import { useState, useRef, FC } from "react";
+import { useState, FC } from "react";
 import TransactionBlock from "./TransactionBlock/TransactionBlock";
 import { AiOutlineRight } from "react-icons/ai";
 import { MdDateRange } from "react-icons/md";

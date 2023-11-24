@@ -18,7 +18,7 @@ const Create: FC<ICreate> = ({ userName, userEmail }) => {
         setType(type);
     };
 
-    const handleSubmit = async (e) => {
+    const handleSubmit = async (e: SubmitEvent) => {
         e.preventDefault();
         try {
             const response = await fetch("http://localhost:8000/api/cards", {
